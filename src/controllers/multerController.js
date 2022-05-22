@@ -1,5 +1,6 @@
-export default async function postFile (req, res) {
-    try {
+export default async function multerController (req, res) {
+    try {        
+        console.log(req.file);
         res.sendStatus(201);
     } catch (error) {
         console.log(error);
